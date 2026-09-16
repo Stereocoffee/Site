@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stereocoffee OÜ | Экспресс-доставка и индивидуальные перевозки Прибалтика — Скандинавия</title>
+    <title>Stereocoffee OÜ | Express Delivery Northern Europe</title>
     <style>
         :root {
             --bg-color: #0d0c0f;
@@ -20,7 +20,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.6;
@@ -32,10 +32,10 @@
         }
 
         .container {
-            max-width: 680px;
+            max-width: 550px;
             width: 100%;
             background: var(--card-bg);
-            padding: 45px 35px;
+            padding: 40px 30px;
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
             text-align: center;
@@ -43,18 +43,18 @@
         }
 
         .logo-area {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .logo-text {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 900;
             letter-spacing: -1px;
             color: var(--text-main);
         }
 
         .tagline {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: var(--accent-color);
             font-weight: 700;
             text-transform: uppercase;
@@ -63,93 +63,47 @@
         }
 
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
             font-weight: 700;
             color: #fff;
         }
 
-        .description {
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            font-size: 1.05rem;
-            text-align: left;
-        }
-
-        .geo-block {
+        .info-card {
             background: #1d1a24;
             padding: 20px;
             border-radius: 14px;
             margin-bottom: 30px;
             text-align: left;
-            border: 1px solid #2d2936;
+            border-left: 4px solid var(--accent-color);
         }
 
-        .geo-block h2 {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            color: var(--accent-color);
-        }
-
-        .geo-grid {
-            display: grid;
-            grid-template-columns: 1fr 0.2fr 1fr;
-            gap: 10px;
-            font-size: 1rem;
-            font-weight: 500;
-            align-items: center;
-        }
-
-        .geo-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .geo-arrow {
-            text-align: center;
-            color: var(--accent-color);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 35px;
-            text-align: left;
-        }
-
-        .feature-item {
-            background: #1d1a24;
-            padding: 18px;
-            border-radius: 14px;
-            border-top: 3px solid var(--accent-color);
-        }
-
-        .feature-item h3 {
+        .info-card p {
+            margin-bottom: 12px;
             font-size: 1.05rem;
-            margin-bottom: 8px;
-            color: #fff;
+            color: var(--text-main);
         }
 
-        .feature-item p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+        .info-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-card b {
+            color: var(--accent-color);
         }
 
         .contacts-title {
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 20px;
+            color: var(--text-muted);
         }
 
         .links-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
         .btn {
@@ -184,19 +138,15 @@
             font-size: 0.85rem;
             color: var(--text-muted);
             border-top: 1px solid #232029;
-            padding-top: 25px;
+            padding-top: 20px;
         }
 
-        @media (max-width: 550px) {
-            .features-grid, .geo-grid {
-                grid-template-columns: 1fr;
-            }
-            .geo-arrow {
-                transform: rotate(90deg);
-                margin: 5px 0;
-            }
+        @media (max-width: 500px) {
             .container {
                 padding: 30px 20px;
+            }
+            .logo-text {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -204,67 +154,42 @@
 <body>
 
     <div class="container">
-        <!-- Логотип компании -->
+        <!-- Logo -->
         <div class="logo-area">
             <div class="logo-text">Stereocoffee OÜ</div>
-            <div class="tagline">Быстро. Позитивно. С музыкой.</div>
+            <div class="tagline">Fast. Positive. With music.</div>
         </div>
 
-        <!-- Главное описание -->
-        <h1>Индивидуальная логистика по сложным маршрутам</h1>
-        <p class="description">
-            Мы осуществляем небольшие, сборные и персональные экспресс-перевозки личных вещей и коммерческих грузов по гибким индивидуальным маршрутам. Наша специализация — быстрая и надежная доставка «от двери до двери» там, где стандартная крупногабаритная логистика бессильна.
-        </p>
+        <!-- Headline -->
+        <h1>Individual Express Cargo Logistics</h1>
 
-        <!-- География и направления -->
-        <div class="geo-block">
-            <h2>🌍 Направления перевозок:</h2>
-            <div class="geo-grid">
-                <div class="geo-item">📍 <b>Прибалтика:</b> Эстония, Латвия, Литва</div>
-                <div class="geo-arrow">↔️</div>
-                <div class="geo-item">📍 <b>Скандинавия:</b> Финляндия, Швеция, Норвегия</div>
-            </div>
+        <!-- Main Simplified Card -->
+        <div class="info-card">
+            <p>⏱️ <b>Express cargo delivery</b> across Northern Finland and Norway using fast, custom-tailored routes.</p>
+            <p>📦 Capacity up to <b>500 kg</b>.</p>
+            <p>⚡ Delivery time starting <b>from 1 day</b>.</p>
+            <p>📑 Custom clearance and transit document support included.</p>
         </div>
 
-        <!-- Ключевые параметры и веса -->
-        <div class="features-grid">
-            <div class="feature-item">
-                <h3>Грузы до 600 кг</h3>
-                <p>Оптимальный формат для быстрых переездов, доставки личных вещей, B2B-образцов и оборудования по сложным маршрутам.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Норвегия — Финляндия</h3>
-                <p>Выделенное трансграничное направление с возможностью оперативной перевозки партий весом <b>до 1300 кг</b>.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Таможенный сервис</h3>
-                <p>Полное юридическое сопровождение, оформление таможенных и экспортных документов (включая транзит и декларирование в Норвегию).</p>
-            </div>
-            <div class="feature-item">
-                <h3>Индивидуальный подход</h3>
-                <p>Доставка в любую глубинку, гибкий график, позитивная атмосфера, хорошая музыка в пути и прямая связь с водителем.</p>
-            </div>
-        </div>
-
-        <!-- Контакты для связи -->
-        <div class="contacts-title">Рассчитать стоимость и маршрут:</div>
+        <!-- Call to Action -->
+        <div class="contacts-title">Get a quick route & price quote:</div>
         
         <div class="links-container">
-            <!-- Рабочая ссылка на Telegram -->
+            <!-- Telegram Button -->
             <a href="https://t.me" target="_blank" class="btn btn-tg">
-                Связаться в Telegram
+                Contact via Telegram
             </a>
 
-            <!-- Рабощая ссылка на WhatsApp -->
+            <!-- WhatsApp Button -->
             <a href="https://wa.me" target="_blank" class="btn btn-wa">
-                Написать в WhatsApp
+                Message on WhatsApp
             </a>
         </div>
 
-        <!-- Подвал -->
+        <!-- Footer -->
         <div class="footer">
-            <p>&copy; 2026 Stereocoffee OÜ. Все права защищены.</p>
-            <p>Международные лицензированные перевозки личных вещей и коммерческих грузов. Регистрация: Эстония.</p>
+            <p>&copy; 2026 Stereocoffee OÜ. All rights reserved.</p>
+            <p>Licensed international transport & relocation services. Based in Estonia.</p>
         </div>
     </div>
 
